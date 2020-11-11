@@ -14,4 +14,4 @@ More colourful themes may be added in the future if suggested!
 
 ## Website Example
 
-![ok](https://cdn.luke.mx/cd9618b3-0527-4ad6-8298-585c232da988.gif)
+![Example of the website](https://cdn.luke.mx/cd9618b3-0527-4ad6-8298-585c232da988.gif)
