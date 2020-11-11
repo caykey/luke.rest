@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="language" content="English">
+    <meta name="author" content="CactiveNetwork">
+    <meta name="theme-color" content="#eeaeca">
+    <meta name="keywords" content="Lofi, Chill, Music">
+    <meta property="og:site_name" content="luke.rest">
+    <meta property="og:url" content="https://luke.rest">
+    <meta property="og:title" content="chill lofi music ~">
+    <meta property="og:image" content="/media/lukerest.png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:description" content="Vibe to some never ending lofi hip-hop chill music from luke.rest. Listen to music as the same time as your friends!">
+
+    <link rel="icon" type="image/png" href="/media/lukerest-transparent.png">
+
+    <title>luke.rest ~ chill lofi music</title>
+    <link rel="stylesheet" href="/style.css">
+    
+    <script src="https://kit.fontawesome.com/5161727f6f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"></script>
+
+</head>
+
+<body>
+
+    <audio id="source" src="/media/audio/walk_in_a_garden.mp3"></audio>
+
+    <div id="loader" class="start">
+        <i id="start" title="Click to start playing music." class="fas fa-play"></i>
+    </div>
+
+    <div class="song-timer">
+        <h3><span id="current_time">0</span>/<span id="duration">0</span></h3>
+    </div> 
+
+    <div class="links">
+        <a target="_blank" title="Click to join the CactiveNetwork discord." href="https://discord.gg/cayke"><i class="fab fa-discord"></i></a>
+        <a target="_blank" title="Click to suggest a song." href="https://forms.gle/fZSF1GZ7h9THZgUS9"><i class="fas fa-plus-circle"></i></a>
+        <a target="_blank" title="Click to visit luke.mx." href="https://luke.mx"><i class="fas fa-globe-americas"></i></a>
+        <a style="cursor: pointer;" title="Click to toggle your theme."><i id="light_mode" class="fas fa-sun"></i></a>
+    </div>
+
+    <div class="metadata">
+        <h1 title="No song currently playing." id="title">• • •</h1>
+        <h3 id="subtitle"></h3>
+    </div>
+
+    <div class="controls">
+        <i id="mute" class="fas fa-volume-mute"></i>
+        <input type="range" min="0" max="100" value="5" class="slider" id="volume" step="any">
+    </div>
+
+    <!-- <input type="range" min="0" max="100" value="0" class="slider disabled" step="any" id="time" disabled> -->
+
+    <div id="scratches"></div>
+    <canvas id="reactor"></canvas>
+
+    <script src="js/radio.js"></script>
+    <script src="js/reactor.js"></script>
+
+</body>
+
+</html>
